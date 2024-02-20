@@ -1,0 +1,25 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Fonts
+@font-face {
+    font-family: Caveat;
+    src: url(../fonts/Caveat/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+

@@ -1,0 +1,59 @@
+/* Header */
+
+.headerContainer {
+    padding-top: 3em;
+}
+
+h1 {
+    margin-top: 5rem;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.whiteLign {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+}
+
+/* Nav */
+
+.navContainer {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navName {
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-left: 3rem;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    font-size: 1.25rem;
+    padding-right: 3rem;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.fixedNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+
+}

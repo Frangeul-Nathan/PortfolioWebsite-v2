@@ -1,0 +1,38 @@
+/* Skills */
+
+.skillSection {
+    text-align: center;
+}
+
+.skillContainer {
+    display: flex;
+}
+
+.skillTree {
+    width: 100%;
+}
+
+.curriculumVitae {
+    width: 100%;
+
+}
+
+.skills {
+    margin: auto;
+    width: 100%;
+    max-width: 50%;
+
+}
+
+.skill-name {
+    text-align: start;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar {
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+}
