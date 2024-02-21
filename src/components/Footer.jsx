@@ -1,6 +1,7 @@
 function Footer () {
     return (
       <>
+      <p>xdsxdcdsdxcdswxcsxdw</p>
       </>
     );
   }
