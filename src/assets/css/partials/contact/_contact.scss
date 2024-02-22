@@ -5,163 +5,38 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
   }
+
+//   .formContainer {
+//     background-color: #2c2c2c; /* Couleur de fond */
+//     border: 1px solid #555; /* Couleur et épaisseur de la bordure */
+//     border-radius: 10px; /* Bordure arrondie */
+//     padding: 10px; /* Espacement intérieur du container */
+// }
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   
-  input::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-webkit-input-placeholder,
-  textarea:focus::-webkit-input-placeholder {
-    color: #bbb5af;
-  }
-  
-  input::-moz-placeholder,
-  textarea::-moz-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-moz-placeholder,
-  textarea:focus::-moz-placeholder {
-    color: #bbb5af;
-  }
-  
-  input::placeholder,
-  textarea::placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::placeholder,
-  textarea::focus:placeholder {
-    color: #bbb5af;
-  }
-  
-  input::-ms-placeholder,
-  textarea::-ms-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-ms-placeholder,
-  textarea:focus::-ms-placeholder {
-    color: #bbb5af;
-  }
-  
-  /* on hover placeholder */
-  input:hover::-webkit-input-placeholder,
-  textarea:hover::-webkit-input-placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-webkit-input-placeholder,
-  textarea:hover:focus::-webkit-input-placeholder {
-    color: #cbc6c1;
-  }
-  
-  input:hover::-moz-placeholder,
-  textarea:hover::-moz-placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-moz-placeholder,
-  textarea:hover:focus::-moz-placeholder {
-    color: #cbc6c1;
-  }
-  
-  input:hover::placeholder,
-  textarea:hover::placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::placeholder,
-  textarea:hover:focus::placeholder {
-    color: #cbc6c1;
-  }
-  
-  input:hover::placeholder,
-  textarea:hover::placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-ms-placeholder,
-  textarea:hover::focus:-ms-placeholder {
-    color: #cbc6c1;
-  }
-  
-  #form {
-    position: relative;
-    width: 500px;
-    margin: 50px auto 100px auto;
-  }
-  
-  input {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    width: 470px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-    background: transparent;
-    outline: none;
-    color: white;
-    border: solid 1px #b3aca7;
-    border-bottom: none;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-  input:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
-  textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    max-height: 110px;
-    padding: 15px;
-    background: transparent;
-    outline: none;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    border: solid 1px #b3aca7;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-  textarea:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
-  #submit {
-    width: 502px;
-    padding: 0;
-    margin: -5px 0px 0px 0px;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    color: #b3aca7;
-    outline: none;
-    cursor: pointer;
-    border: solid 1px #b3aca7;
-    border-top: none;
-  }
-  
-  #submit:hover {
-    color: #e2dedb;
-  }
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.button-container {
+  text-align: center; /* Ajout de la propriété pour centrer le contenu */
+}
+
   

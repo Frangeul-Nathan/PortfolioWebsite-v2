@@ -1,19 +1,35 @@
 import React from 'react';
 import "../assets/css/partials/contact/_contact.scss";
+import "../assets/css/buttons/buttons.scss";
 
 function Contact() {
   return (
     <>
       <div className="backwrapContact gradient">
         <div className="back-shapes">
-            <h2 className="whiteTitle" id="contact">Contact</h2>
-            <hr className="whiteLign" />
-            <form id="form" className="topBefore">
-              <input id="name" type="text" placeholder="NAME" />
-              <input id="email" type="text" placeholder="E-MAIL" />
-              <textarea id="message" placeholder="MESSAGE"></textarea>
-              <input id="submit" type="submit" value="Envoyer" />
+          <h2 className="whiteTitle" id="contact">Contact</h2>
+          <hr className="whiteLign" />
+          <div className='formContainer'>
+            <form >
+              <label htmlFor="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" />
+
+              <label htmlFor="prenom">Prénom :</label>
+              <input type="text" id="prenom" name="prenom" />
+
+              <label htmlFor="email">Email :</label>
+              <input type="email" id="email" name="email" />
+
+              <label htmlFor="object">Objet :</label>
+              <input type="text" id="object" name="object" />
+
+              <label htmlFor="message">Message :</label>
+              <textarea id="message" name="message"></textarea>
+              <div className='button-container'>
+                <button type="submit">Envoyer</button>
+              </div>
             </form>
+          </div>
           <span className="floating circle" style={{ top: '66.59856996935649%', left: '13.020833333333334%', animationDelay: '-0.9s' }}></span>
           <span className="floating triangle" style={{ top: '31.46067415730337%', left: '33.59375%', animationDelay: '-4.8s' }}></span>
           <span className="floating cross" style={{ top: '76.50663942798774%', left: '38.020833333333336%', animationDelay: '-4s' }}></span>
@@ -47,7 +63,7 @@ function Contact() {
           <span className="floating square" style={{ top: '81.51174668028601%', left: '83.59375%', animationDelay: '-0.35s' }}></span>
           <span className="floating square" style={{ top: '11.542390194075587%', left: '91.51041666666667%', animationDelay: '-0.1s' }}></span>
         </div>
-      </div>
+      </div >
     </>
   );
 }
