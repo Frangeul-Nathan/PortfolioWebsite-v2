@@ -34,9 +34,10 @@ function Contact() {
     try {
       const response = await axios.post('http://localhost:3001/send-email', formData);
       console.log(response.data);
-      // Ajoutez ici le code pour gérer la réussite de l'envoi
+
       window.location.reload();
       window.alert('Le message a été envoyé avec succès!');
+
     } catch (error) {
       console.error('Erreur lors de l\'envoi du formulaire :', error);
       // Ajoutez ici le code pour gérer les erreurs

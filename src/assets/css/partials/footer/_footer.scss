@@ -1,4 +1,13 @@
 footer {
-    text-align: center;
     margin: 30px;
-}
+    text-align: center;
+  }
+  
+  .socialContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 40px;
+  }
+
+  
