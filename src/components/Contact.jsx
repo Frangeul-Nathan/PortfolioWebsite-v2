@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import "../assets/css/partials/contact/_contact.scss";
 import "../assets/css/buttons/buttons.scss";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    nom: '',
+    prenom: '',
+    email: '',
+    object: '',
+    message: ''
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:3001/send-email', formData);
+      console.log(response.data);
+      // Ajoutez ici le code pour gérer la réussite de l'envoi
+      window.location.reload();
+      window.alert('Le message a été envoyé avec succès!');
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi du formulaire :', error);
+      // Ajoutez ici le code pour gérer les erreurs
+    }
+  };
+
   return (
     <>
       <div className="backwrapContact gradient">
@@ -10,21 +42,21 @@ function Contact() {
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
           <div className='formContainer'>
-            <form >
+            <form onSubmit={handleSubmit}>
               <label htmlFor="nom">Nom :</label>
-              <input type="text" id="nom" name="nom" />
+              <input type="text" id="nom" name="nom" onChange={handleInputChange} />
 
               <label htmlFor="prenom">Prénom :</label>
-              <input type="text" id="prenom" name="prenom" />
+              <input type="text" id="prenom" name="prenom" onChange={handleInputChange} />
 
               <label htmlFor="email">Email :</label>
-              <input type="email" id="email" name="email" />
+              <input type="email" id="email" name="email" onChange={handleInputChange} />
 
               <label htmlFor="object">Objet :</label>
-              <input type="text" id="object" name="object" />
+              <input type="text" id="object" name="object" onChange={handleInputChange} />
 
               <label htmlFor="message">Message :</label>
-              <textarea id="message" name="message"></textarea>
+              <textarea id="message" name="message" onChange={handleInputChange}></textarea>
               <div className='button-container'>
                 <button type="submit">Envoyer</button>
               </div>
@@ -63,7 +95,7 @@ function Contact() {
           <span className="floating square" style={{ top: '81.51174668028601%', left: '83.59375%', animationDelay: '-0.35s' }}></span>
           <span className="floating square" style={{ top: '11.542390194075587%', left: '91.51041666666667%', animationDelay: '-0.1s' }}></span>
         </div>
-      </div >
+      </div>
     </>
   );
 }

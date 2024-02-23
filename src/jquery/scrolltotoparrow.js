@@ -18,10 +18,10 @@ export const ScrollToTopArrow = () => {
         $(document).on('scroll', handleScroll);
         $('.scroll-top-wrapper').on('click', handleButtonClick);
 
-        // Retournez une fonction de nettoyage si nécessaire
+        
         return () => {
             $(document).off('scroll', handleScroll);
             $('.scroll-top-wrapper').off('click', handleButtonClick);
         };
-    }, []); // Assurez-vous de fournir un tableau vide de dépendances pour useEffect
+    }, []); 
 };
