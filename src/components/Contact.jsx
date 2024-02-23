@@ -12,6 +12,8 @@ function Contact() {
     message: ''
   });
 
+  const [errorMessage, setErrorMessage] = useState('');
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -22,6 +24,12 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!formData.nom || !formData.prenom || !formData.email || !formData.object || !formData.message) {
+      // Mettre à jour le message d'erreur
+      setErrorMessage('Tous les champs doivent être remplis.');
+      return;
+    }
 
     try {
       const response = await axios.post('http://localhost:3001/send-email', formData);
@@ -43,19 +51,20 @@ function Contact() {
           <hr className="whiteLign" />
           <div className='formContainer'>
             <form onSubmit={handleSubmit}>
-              <label htmlFor="nom">Nom :</label>
+              {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+              <label htmlFor="nom">Nom * :</label>
               <input type="text" id="nom" name="nom" onChange={handleInputChange} />
 
-              <label htmlFor="prenom">Prénom :</label>
+              <label htmlFor="prenom">Prénom * :</label>
               <input type="text" id="prenom" name="prenom" onChange={handleInputChange} />
 
-              <label htmlFor="email">Email :</label>
+              <label htmlFor="email">Email * :</label>
               <input type="email" id="email" name="email" onChange={handleInputChange} />
 
-              <label htmlFor="object">Objet :</label>
+              <label htmlFor="object">Objet * :</label>
               <input type="text" id="object" name="object" onChange={handleInputChange} />
 
-              <label htmlFor="message">Message :</label>
+              <label htmlFor="message">Message * :</label>
               <textarea id="message" name="message" onChange={handleInputChange}></textarea>
               <div className='button-container'>
                 <button type="submit">Envoyer</button>
