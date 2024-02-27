@@ -2,7 +2,7 @@
 
 .skillSection {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .skillContainer {
@@ -36,4 +36,13 @@
     height: 20px;
     background: #cacaca;
     border-radius: 8px;
+}
+
+// CV
+
+.cv-image {
+    border: solid 1px grey;
+    max-width: 92%;
+    min-height: 92%;
+
 }
