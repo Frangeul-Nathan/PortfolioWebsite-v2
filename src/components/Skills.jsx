@@ -1,6 +1,6 @@
 import "../assets/css/partials/skills/_skills.scss"
 import "../assets/css/animations/skills_animation.scss"
-import CV from "../assets/images/Nathan-CV.webp"
+import CV from "../assets/images/Nathan-CV-min.png"
 import { SkillProgressBar } from '../jquery/skillsprogressbar';
 
 
