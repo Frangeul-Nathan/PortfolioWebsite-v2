@@ -1,6 +1,7 @@
 import "../assets/css/partials/skills/_skills.scss"
 import "../assets/css/animations/skills_animation.scss"
 import CV from "../assets/images/Nathan-CV-min.png"
+import cvDownload from "../assets/images/Nathan-CV.pdf"
 import { SkillProgressBar } from '../jquery/skillsprogressbar';
 
 
@@ -76,6 +77,11 @@ function Skills() {
         <div className="curriculumVitae">
           <h3>Curriculum Vitae</h3>
           <img src={CV} alt="" className="cv-image" />
+          <div className='button-container'>
+            <a href={cvDownload} download="Nathan-CV.pdf">
+              <button>Télécharger</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>

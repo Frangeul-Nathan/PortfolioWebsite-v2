@@ -1,5 +1,5 @@
 footer {
-    margin: 30px;
+    margin: 35px;
     text-align: center;
   }
   
@@ -10,4 +10,6 @@ footer {
     font-size: 40px;
   }
 
-  
+  a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
