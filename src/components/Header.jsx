@@ -2,21 +2,32 @@ import arrowSvg from "../assets/images/arrow-down-solid.svg"
 import "../assets/css/animations/header_animation.scss"
 import "../assets/css/partials/header/_header.scss"
 import { Scroll } from '../jquery/scroll';
+import React, { useState } from 'react';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   Scroll();
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      <div className="backwrap gradient">
+      <div className={`backwrap gradient ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className="back-shapes">
-          <nav className="navContainer">
+          <nav className={`navContainer ${isMenuOpen ? 'menu-open' : ''}`}>
             <div className="leftNavContainer">
               <p className="navName">NATHAN FRANGEUL</p>
             </div>
             <div className="rightNavContainer">
-              <ul>
+              <div className={`burger-menu ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
                 <li>
                   <a href="#portfolio" className="glow">Portfolio</a>
                 </li>
