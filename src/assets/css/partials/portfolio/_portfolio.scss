@@ -41,3 +41,36 @@
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 1440px) {
+    .backwrapPortfolio {
+        height: 110vh;
+    }
+  }
+
+@media (max-width: 1024px) {
+    .backwrapPortfolio {
+        height: 100vh;
+    }
+  }
+
+@media (max-width: 768px) {
+    .screenContainer {
+        flex-direction: column;
+    }
+    .imageWrapper {
+        width: 90%;
+    }
+    .backwrapPortfolio {
+        height: 250vh;
+    }
+    .imageWrapper {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .backwrapPortfolio {
+        height: 185vh;
+    }
+}

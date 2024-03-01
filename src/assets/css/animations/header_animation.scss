@@ -188,11 +188,6 @@
 
 /* Arrow animation */
 
-img {
-    height: 50px;
-    width: auto;
-}
-
 .wrap img {
     line-height: 60px;
     position: absolute;
@@ -205,6 +200,7 @@ img {
     animation-duration: 1.5s;
     animation: bounce 3.6s ease infinite;
     transform-origin: 50% 50%;
+    height: 50px;
 }
 
 @keyframes bounce {

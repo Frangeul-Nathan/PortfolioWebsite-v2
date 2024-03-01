@@ -7,22 +7,11 @@
 
 .skillContainer {
     display: flex;
+    justify-content: space-evenly;
 }
 
-.skillTree {
-    width: 100%;
-}
-
-.curriculumVitae {
-    width: 100%;
-
-}
-
-.skills {
-    margin: auto;
-    width: 100%;
-    max-width: 50%;
-
+.skillBox {
+    width: 30%;
 }
 
 .skill-name {
@@ -40,9 +29,48 @@
 
 // CV
 
+.curriculumVitaeContainer {
+    width: 30%;
+}
+
+.curriculumVitae {
+    display: flex;
+    flex-direction: column;
+}
+
 .cv-image {
     border: solid 1px grey;
-    max-width: 87%;
-    min-height: 87%;
-
+    max-width: 100%;
 }
+
+.buttonContainer {
+    margin-top: 10px;
+}
+
+// Responsive
+@media (max-width: 1440px) {
+    .curriculumVitaeContainer {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .curriculumVitaeContainer {
+        width: 55%;
+    }
+    .cv-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .skillBox {
+        width: 70%;
+    }
+    .skillContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

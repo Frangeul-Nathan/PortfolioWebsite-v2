@@ -1,3 +1,5 @@
+@import '../../variables/variables.scss';
+
 /* Header */
 
 .headerContainer {
@@ -7,14 +9,14 @@
 h1 {
     margin-top: 5rem;
     text-align: center;
-    color: white;
+    color: $base-color-2;
     position: relative;
 }
 
 .whiteLign {
     width: 50px;
     height: 5px;
-    background-color: white;
+    background-color: $base-color-2;
 }
 
 /* Nav */
@@ -23,8 +25,8 @@ h1 {
     position: fixed;
     top: 0;
     z-index: 999;
-    color: white;
-    background-color: black;
+    color: $base-color-2;
+    background-color: $base-color-1;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -54,7 +56,7 @@ li {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
+    background-color: $base-color-1;
     z-index: 2000;
 
 }
@@ -67,7 +69,7 @@ li {
   
     span {
       display: block;
-      background-color: white;
+      background-color: $base-color-2;
       height: 2px;
       width: 25px;
       margin: 3px 0;
@@ -89,7 +91,21 @@ li {
 
 //   Responsive
 
+  @media (max-width: 1024px) {
+    .backwrap {
+      height: 45vh;
+    }
+  }
+
   @media (max-width: 768px) {
+    .backwrap {
+      height: 45vh;
+    }
+
+    .wrap img {
+      left: 48%;
+    }
+
     .burger-menu {
       display: flex;
       flex-direction: column;
@@ -112,7 +128,7 @@ li {
       top: 60px; /* Adjust as needed */
       left: 0;
       width: 100%;
-      background-color: black;
+      background-color: $base-color-1;
       z-index: 2500;
     }
   
@@ -132,4 +148,38 @@ li {
     .burger-menu.open span:nth-child(3) {
       transform: rotate(45deg) translate(-5px, -6px);
     }
+  }
+
+  @media (max-width: 425px) {
+
+    .backwrap {
+      height: 35vh;
+    }
+
+    .navName {
+      font-size: $nav-size-2;
+      padding-left: 2rem;
+    }
+
+    ul {
+        font-size: $nav-size-2;
+    }
+
+    p {
+      font-size: $paragraph-size-1;
+    }
+
+    h1{
+      margin-top: 20px;
+    }
+
+    .line {
+      font-size: $nav-size-2;
+    }
+
+    .wrap img {
+      left: 46%;
+      bottom: 10%;
+    }
+
   }
