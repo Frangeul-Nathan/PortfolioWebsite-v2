@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    height: 75vh;
+    min-height: 75vh;
   }
 
 //   .formContainer {
@@ -39,25 +39,4 @@ input, textarea {
   text-align: center; /* Ajout de la propriété pour centrer le contenu */
 }
 
-@media (max-width: 1024px) {
-  .backwrapContact {
-    height: 80vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .backwrapContact {
-      height: 80vh;
-  }
-}
-
-@media (max-width: 425px) {
-  .backwrapContact {
-    height: 80vh;
-}
-  form {
-    max-width: 250px;
-  }
-    
-}
   
