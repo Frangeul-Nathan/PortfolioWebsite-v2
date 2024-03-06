@@ -9,27 +9,27 @@
     transition: 1s linear;
 }
 
-.skill-per::before {
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background-color: $base-color-1;
-    color: $base-color-2;
-    font-size: 12px;
-    border-radius: 4px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
-}
+// .skill-per::before {
+//     content: attr(per);
+//     position: absolute;
+//     padding: 4px 6px;
+//     background-color: $base-color-1;
+//     color: $base-color-2;
+//     font-size: 12px;
+//     border-radius: 4px;
+//     top: -35px;
+//     right: 0;
+//     transform: translateX(50%);
+// }
 
-.skill-per::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: $base-color-1;
-    top: -16px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
-}
+// .skill-per::after {
+//     content: "";
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     background-color: $base-color-1;
+//     top: -16px;
+//     right: 0;
+//     transform: translateX(50%) rotate(45deg);
+//     border-radius: 2px;
+// }

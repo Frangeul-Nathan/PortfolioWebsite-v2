@@ -91,21 +91,7 @@ li {
 
 //   Responsive
 
-  @media (max-width: 1024px) {
-    .backwrap {
-      height: 45vh;
-    }
-  }
-
   @media (max-width: 768px) {
-    .backwrap {
-      height: 45vh;
-    }
-
-    .wrap img {
-      left: 48%;
-    }
-
     .burger-menu {
       display: flex;
       flex-direction: column;
@@ -151,11 +137,6 @@ li {
   }
 
   @media (max-width: 425px) {
-
-    .backwrap {
-      height: 35vh;
-    }
-
     .navName {
       font-size: $nav-size-2;
       padding-left: 2rem;

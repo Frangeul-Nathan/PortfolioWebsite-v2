@@ -47,6 +47,9 @@ function Header() {
               <p className="line anim-typewriter">Je cherche actuellement une alternance.</p>
             </div>
           </div>
+            <a className="arrowContainer" href="#presentation">
+              <img src={arrowSvg} alt="arrow" id="arrow" class="animated bounce " />
+            </a>
           <span className="floating circle" style={{ top: '66.59856996935649%', left: '13.020833333333334%', animationDelay: '-0.9s' }}></span>
           <span className="floating triangle" style={{ top: '31.46067415730337%', left: '33.59375%', animationDelay: '-4.8s' }}></span>
           <span className="floating cross" style={{ top: '76.50663942798774%', left: '38.020833333333336%', animationDelay: '-4s' }}></span>
@@ -79,11 +82,6 @@ function Header() {
           <span className="floating square" style={{ top: '52.093973442288046%', left: '68.90625%', animationDelay: '-0.7s' }}></span>
           <span className="floating square" style={{ top: '81.51174668028601%', left: '83.59375%', animationDelay: '-0.35s' }}></span>
           <span className="floating square" style={{ top: '11.542390194075587%', left: '91.51041666666667%', animationDelay: '-0.1s' }}></span>
-        </div>
-        <div class="wrap">
-          <a href="#presentation">
-            <img src={arrowSvg} alt="arrow" id="arrow" class="animated bounce " />
-          </a>
         </div>
       </div>
     </>
