@@ -183,3 +183,9 @@ li {
     }
 
   }
+
+  @media (max-width: 435px) {
+    .nav-links {
+      top: 50px;
+    }
+  }

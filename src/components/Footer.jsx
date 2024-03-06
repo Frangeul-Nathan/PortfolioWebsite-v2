@@ -10,10 +10,10 @@ function Footer() {
         <p>&copy; Frangeul Nathan | 2024</p>
       </div>
       <div className='socialContainer'>
-        <a href="https://github.com/Frangeul-Nathan">
+        <a href="https://github.com/Frangeul-Nathan" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="https://github.com/Frangeul-Nathan" target="_blank">
+        <a href="https://www.linkedin.com/in/nathan-frangeul/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>

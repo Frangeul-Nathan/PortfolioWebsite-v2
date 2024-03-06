@@ -1,10 +1,11 @@
+@import '.././variables/variables.scss';
 /* Background animation */
 .backwrap {
-    background: black;
+    background: $base-color-1;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    min-height: 45vh;
+    height: 45vh;
     position: relative;
     left: 0;
     top: 0;
@@ -14,7 +15,7 @@
 /* Shapes & Animation */
 .back-shapes {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -144,7 +145,7 @@
 // Typewritter animation
 
 .line {
-    color: white;
+    color: $base-color-2;
     position: relative;
     top: 50%;
     width: 16em;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import "../assets/css/partials/contact/_contact.scss";
 import "../assets/css/buttons/buttons.scss";
 
