@@ -50,7 +50,7 @@ function Contact() {
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
           <div className='formContainer'>
-            <form netlify name='contact'>
+            <form name="contact" netlify="true">
               <label htmlFor="nom">Nom * :</label>
               <input type="text" id="nom" name="nom"  required/>
 
