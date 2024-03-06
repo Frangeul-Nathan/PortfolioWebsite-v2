@@ -50,22 +50,21 @@ function Contact() {
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
           <div className='formContainer'>
-            <form onSubmit={handleSubmit}>
-              {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+            <form netlify name='contact'>
               <label htmlFor="nom">Nom * :</label>
-              <input type="text" id="nom" name="nom" onChange={handleInputChange} />
+              <input type="text" id="nom" name="nom"  required/>
 
               <label htmlFor="prenom">Prénom * :</label>
-              <input type="text" id="prenom" name="prenom" onChange={handleInputChange} />
+              <input type="text" id="prenom" name="prenom"  required/>
 
               <label htmlFor="email">Email * :</label>
-              <input type="email" id="email" name="email" onChange={handleInputChange} />
+              <input type="email" id="email" name="email"  required/>
 
               <label htmlFor="object">Objet * :</label>
-              <input type="text" id="object" name="object" onChange={handleInputChange} />
+              <input type="text" id="object" name="object"  required/>
 
               <label htmlFor="message">Message * :</label>
-              <textarea id="message" name="message" onChange={handleInputChange}></textarea>
+              <textarea id="message" name="message" required></textarea>
               <div className='button-container'>
                 <button type="submit">Envoyer</button>
               </div>
