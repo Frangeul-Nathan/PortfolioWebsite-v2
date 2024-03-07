@@ -1,17 +1,20 @@
 import arrowSvg from "../assets/images/arrow-down-solid.svg"
 import "../assets/css/animations/header_animation.scss"
 import "../assets/css/partials/header/_header.scss"
-import { Scroll } from '../jquery/scroll';
 import React, { useState } from 'react';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  Scroll();
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Ferme le menu burger une fois cliqué sur une option
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
 
   return (
     <>
@@ -29,13 +32,13 @@ function Header() {
               </div>
               <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
                 <li>
-                  <a href="#portfolio" className="glow">Portfolio</a>
+                  <a href="#portfolio" className="glow" onClick={closeMenu}>Portfolio</a>
                 </li>
                 <li>
-                  <a href="#competences" className="glow">Compétences</a>
+                  <a href="#competences" className="glow" onClick={closeMenu}>Compétences</a>
                 </li>
                 <li>
-                  <a href="#contact" className="glow">Contact</a>
+                  <a href="#contact" className="glow" onClick={closeMenu}>Contact</a>
                 </li>
               </ul>
             </div>

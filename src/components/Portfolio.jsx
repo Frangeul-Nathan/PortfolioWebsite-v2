@@ -8,7 +8,7 @@ import "../assets/css/partials/portfolio/_portfolio.scss"
 function Portfolio() {
   return (
     <>
-      <div className="backwrapPortfolio gradient">
+      <section className="backwrapPortfolio gradient">
         <div className="back-shapes">
           <h2 className="whiteTitle" id="portfolio">Portfolio</h2>
           <hr className="whiteLign" />
@@ -67,7 +67,7 @@ function Portfolio() {
           <span className="floating square" style={{ top: '81.51174668028601%', left: '83.59375%', animationDelay: '-0.35s' }}></span>
           <span className="floating square" style={{ top: '11.542390194075587%', left: '91.51041666666667%', animationDelay: '-0.1s' }}></span>
         </div>
-      </div>
+      </section>
     </>
   );
 }

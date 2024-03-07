@@ -1,51 +1,51 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import "../assets/css/partials/contact/_contact.scss";
 import "../assets/css/buttons/buttons.scss";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    nom: '',
-    prenom: '',
-    email: '',
-    object: '',
-    message: ''
-  });
 
-  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+  // const [formData, setFormData] = useState({
+  //   nom: '',
+  //   prenom: '',
+  //   email: '',
+  //   object: '',
+  //   message: ''
+  // });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value
+  //   });
+  // };
 
-    if (!formData.nom || !formData.prenom || !formData.email || !formData.object || !formData.message) {
-      // Mettre à jour le message d'erreur
-      setErrorMessage('Tous les champs doivent être remplis.');
-      return;
-    }
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      const response = await axios.post('http://localhost:3001/send-email', formData);
-      console.log(response.data);
+  //   if (!formData.nom || !formData.prenom || !formData.email || !formData.object || !formData.message) {
+  //     // Mettre à jour le message d'erreur
+  //     setErrorMessage('Tous les champs doivent être remplis.');
+  //     return;
+  //   }
 
-      window.location.reload();
-      window.alert('Le message a été envoyé avec succès!');
+  //   try {
+  //     const response = await axios.post('http://localhost:3001/send-email', formData);
+  //     console.log(response.data);
 
-    } catch (error) {
-      console.error('Erreur lors de l\'envoi du formulaire :', error);
-      // Ajoutez ici le code pour gérer les erreurs
-    }
-  };
+  //     window.location.reload();
+  //     window.alert('Le message a été envoyé avec succès!');
+
+  //   } catch (error) {
+  //     console.error('Erreur lors de l\'envoi du formulaire :', error);
+  //     // Ajoutez ici le code pour gérer les erreurs
+  //   }
+  // };
 
   return (
     <>
-      <div className="backwrapContact gradient">
+      <section className="backwrapContact gradient">
         <div className="back-shapes">
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
@@ -103,7 +103,7 @@ function Contact() {
           <span className="floating square" style={{ top: '81.51174668028601%', left: '83.59375%', animationDelay: '-0.35s' }}></span>
           <span className="floating square" style={{ top: '11.542390194075587%', left: '91.51041666666667%', animationDelay: '-0.1s' }}></span>
         </div>
-      </div>
+      </section>
     </>
   );
 }
