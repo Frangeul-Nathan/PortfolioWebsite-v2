@@ -53,10 +53,10 @@ function Contact() {
             <form name="contact" data-netlify="true" onSubmit="submit">
               <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="nom">Nom * :</label>
-              <input type="text" name="nom" required />
+              <input type="text" name="name" required />
 
               <label htmlFor="prenom">Prénom * :</label>
-              <input type="text" name="prenom" required />
+              <input type="text" name="surname" required />
 
               <label htmlFor="email">Email * :</label>
               <input type="email"  name="email" required />
