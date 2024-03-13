@@ -50,7 +50,7 @@ function Contact() {
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
           <div className='formContainer'>
-            <form name="contact" netlify="true">
+            <form name="contact" netlify netlify-honeypot="bot-field">
               <label htmlFor="nom">Nom * :</label>
               <input type="text" id="nom" name="nom"  required/>
 
