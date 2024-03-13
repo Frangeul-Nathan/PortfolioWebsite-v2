@@ -52,11 +52,11 @@ function Contact() {
           <div className='formContainer'>
             <form name="contact" data-netlify="true" onSubmit="submit">
               <input type="hidden" name="form-name" value="contact" />
-              <label htmlFor="nom">Nom * :</label>
-              <input type="text" name="name" required />
-
-              <label htmlFor="prenom">Prénom * :</label>
+              <label htmlFor="surname">Nom * :</label>
               <input type="text" name="surname" required />
+
+              <label htmlFor="name">Prénom * :</label>
+              <input type="text" name="name" required />
 
               <label htmlFor="email">Email * :</label>
               <input type="email"  name="email" required />
