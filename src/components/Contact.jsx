@@ -50,18 +50,19 @@ function Contact() {
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
           <div className='formContainer'>
-            <form name="contact" netlify netlify-honeypot="bot-field">
+            <form name="contact" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="nom">Nom * :</label>
-              <input type="text" id="nom" name="nom"  required/>
+              <input type="text" id="nom" name="nom" required />
 
               <label htmlFor="prenom">Prénom * :</label>
-              <input type="text" id="prenom" name="prenom"  required/>
+              <input type="text" id="prenom" name="prenom" required />
 
               <label htmlFor="email">Email * :</label>
-              <input type="email" id="email" name="email"  required/>
+              <input type="email" id="email" name="email" required />
 
               <label htmlFor="object">Objet * :</label>
-              <input type="text" id="object" name="object"  required/>
+              <input type="text" id="object" name="object" required />
 
               <label htmlFor="message">Message * :</label>
               <textarea id="message" name="message" required></textarea>
