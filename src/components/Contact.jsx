@@ -10,21 +10,24 @@ function Contact() {
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
           <div className='formContainer'>
-          <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>,
+            <form name="contact" method="post">
+              <input type="hidden" name="form-name" value="contact" />
+              <p>
+                <label>Nom: <input type="text" name="surname" required /></label>
+              </p>
+              <p>
+                <label>Prénom: <input type="text" name="name" required /></label>
+              </p>
+              <p>
+                <label>Email: <input type="email" name="email" required /></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message" required></textarea></label>
+              </p>
+              <p className="button-container">
+                <button type="submit">Envoyer</button>
+              </p>
+            </form>
           </div>
           <span className="floating circle" style={{ top: '66.59856996935649%', left: '13.020833333333334%', animationDelay: '-0.9s' }}></span>
           <span className="floating triangle" style={{ top: '31.46067415730337%', left: '33.59375%', animationDelay: '-4.8s' }}></span>
