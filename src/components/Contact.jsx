@@ -1,47 +1,7 @@
-// import React, { useState } from 'react';
 import "../assets/css/partials/contact/_contact.scss";
 import "../assets/css/buttons/buttons.scss";
 
 function Contact() {
-
-
-  // const [formData, setFormData] = useState({
-  //   nom: '',
-  //   prenom: '',
-  //   email: '',
-  //   object: '',
-  //   message: ''
-  // });
-
-  // const handleInputChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({
-  //     ...formData,
-  //     [name]: value
-  //   });
-  // };
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   if (!formData.nom || !formData.prenom || !formData.email || !formData.object || !formData.message) {
-  //     // Mettre à jour le message d'erreur
-  //     setErrorMessage('Tous les champs doivent être remplis.');
-  //     return;
-  //   }
-
-  //   try {
-  //     const response = await axios.post('http://localhost:3001/send-email', formData);
-  //     console.log(response.data);
-
-  //     window.location.reload();
-  //     window.alert('Le message a été envoyé avec succès!');
-
-  //   } catch (error) {
-  //     console.error('Erreur lors de l\'envoi du formulaire :', error);
-  //     // Ajoutez ici le code pour gérer les erreurs
-  //   }
-  // };
 
   return (
     <>
@@ -50,26 +10,21 @@ function Contact() {
           <h2 className="whiteTitle" id="contact">Contact</h2>
           <hr className="whiteLign" />
           <div className='formContainer'>
-            <form name="contact" data-netlify="true" onSubmit="submit">
-              <input type="hidden" name="form-name" value="contact" />
-              <label htmlFor="surname">Nom * :</label>
-              <input type="text" name="surname" required />
-
-              <label htmlFor="name">Prénom * :</label>
-              <input type="text" name="name" required />
-
-              <label htmlFor="email">Email * :</label>
-              <input type="email"  name="email" required />
-
-              <label htmlFor="object">Objet * :</label>
-              <input type="text" name="object" required />
-
-              <label htmlFor="message">Message * :</label>
-              <textarea name="message" required></textarea>
-              <div className='button-container'>
-                <button type="submit">Envoyer</button>
-              </div>
-            </form>
+          <form name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email"/></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>,
           </div>
           <span className="floating circle" style={{ top: '66.59856996935649%', left: '13.020833333333334%', animationDelay: '-0.9s' }}></span>
           <span className="floating triangle" style={{ top: '31.46067415730337%', left: '33.59375%', animationDelay: '-4.8s' }}></span>
